@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+		<title></title>
+		<link href="css/reset.css" type="text/css" rel="stylesheet" />
+		<link href="css/style.css" type="text/css" rel="stylesheet" />
+		<link href="css/animation.css" type="text/css" rel="stylesheet" />
+		<link href="css/swiper.min.css" type="text/css" rel="stylesheet" />
+	</head>
+	<body>
+		<div class="swiper-container">
+			<!--头部：导航栏-->
+			<header>
+				<div class="logo">
+					<img src="img/logoind.png" />
+				</div>
+				<!--导航栏-->
+				<div class="nav">
+					<ul>
+						<li class="list"><a href="productList.html" class="on">实习</a></li>
+						<li class="list"><a href="productList.html">科研</a></li>
+						<li class="list"><a href="productList.html">活动</a></li>
+						<li class="list"><a href="productList.html">全部</a></li>
+					</ul>
+				</div>
+				<div class="contactus">
+					<a>联系我们</a>
+				</div>
+			 </header>
+	         <div class="swiper-wrapper">
+	         	<!--首页： 大图-->
+	            <div class="swiper-slide">
+			        <div class="wrap">
+			        		 <!--banner图-->
+						 <div class="centent_ind">
+						 	<img src="img/indbg.jpg" />
+						 </div>
+						 <!--闪烁的小按钮：点击页面向上滑动-->
+						 <div class="swiper-pagination pulse_ind"></div> 
+					</div>
+	            </div>
+	            <!--项目分类页-->
+	            <div class="swiper-slide">
+	            		<ul class="project_ind jobs">
+	            			<!--实习项目-->
+	            			<li>
+	            				<a href="productList.html">
+		            				<div class="tupian_ind">
+		            					<span class="gradient_ind"></span>
+		            					<img src="img/indimg2.jpg" />
+		            				</div>
+		            				<div class="front_ind">
+		            					<div class="inner_ind">
+		            						<p class="title_ind">实习</p>
+		            						<div class="hide_ind">
+		            							<p class="p1_ind">共有XXX个实习</p>
+		            							<b></b>
+		            							<div class="enterthe_ind enterthe1_ind">进入</div>
+		            						</div>
+		            					</div>
+		            				</div>
+	            				</a>
+	            			</li>
+	            			<!--科研项目-->
+	            			<li>
+	            				<a href="productList.html">
+		            				<div class="tupian_ind">
+		            					<span class="gradient_ind"></span>
+		            					<img src="img/indimg3.jpg" />
+		            				</div>
+		            				<div class="front_ind">
+		            					<div class="inner_ind">
+		            						<p class="title_ind">科研</p>
+		            						<div class="hide_ind">
+		            							<p class="p1_ind">共有XXX个实习</p>
+		            							<b></b>
+		            							<div class="enterthe_ind">进入</div>
+		            						</div>
+		            					</div>
+		            				</div>
+	            				</a>
+	            			</li>
+	            			<!--活动项目-->
+	            			<li>
+	            				<a href="productList.html">
+		            				<div class="tupian_ind">
+		            					<span class="gradient_ind"></span>
+		            					<img src="img/indimg4.jpg" />
+		            				</div>
+		            				<div class="front_ind">
+		            					<div class="inner_ind">
+		            						<p class="title_ind">活动</p>
+		            						<div class="hide_ind">
+		            							<p class="p1_ind">共有XXX个实习</p>
+		            							<b></b>
+		            							<div class="enterthe_ind">进入</div>
+		            						</div>
+		            					</div>
+		            				</div>
+	            				</a>
+	            			</li>
+	            			<!--全部项目-->
+	            			<li>
+	            				<a href="productList.html">
+		            				<div class="tupian_ind">
+		            					<span class="gradient_ind"></span>
+		            					<img src="img/indimg5.jpg" />
+		            				</div>
+		            				<div class="front_ind">
+		            					<div class="inner_ind">
+		            						<p class="title_ind">全部</p>
+		            						<div class="hide_ind">
+		            							<p class="p1_ind">共有XXX个实习</p>
+		            							<b></b>
+		            							<div class="enterthe_ind">进入</div>
+		            						</div>
+		            					</div>
+		            				</div>
+	            				</a>
+	            			</li>
+	            		</ul>
+	            </div>
+	        </div>
+    		</div>
+	</body>
+	<script src="js/jquery.js"></script>
+	<script src="js/js.js"></script>
+	<script src="js/swiper.min.js"></script>
+	<script>
+	    var swiper = new Swiper('.swiper-container', {
+	        pagination: '.swiper-pagination',
+	        direction: 'vertical',
+	        slidesPerView: 1,
+	        paginationClickable: true,
+	        mousewheelControl: true
+	    });
+    </script>
+</html>

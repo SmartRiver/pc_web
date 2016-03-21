@@ -1,0 +1,142 @@
+ 
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(2, 2, 2);
+    transform: scale3d(2, 2, 2);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+	}
+@-webkit-keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(2, 2, 2);
+    transform: scale3d(2, 2, 3);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+.swiper-pagination-bullet{
+  -webkit-animation: pulse 2s infinite;
+  animation: pulse 2s infinite;
+}
+.swiper-pagination>span:nth-child(1){ display: none;}
+.swiper-pagination>span:nth-child(2){ background: url(../img/indimg1.png)no-repeat; background-size: contain;}
+.title_ind{
+	-webkit-transform: translate3d(0, 105px, 0);
+	transform: translate3d(0, 105px, 0);
+	-webkit-transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1) 50ms;
+	-moz-transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1) 50ms;
+	transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1) 50ms; 
+	}
+
+.jobs b {
+	display: block;
+	height: 34px;
+	width: 1px;
+	margin: 20px auto;
+	background: #FFFFFF;
+	-webkit-transform: translateY(30px);
+	-ms-transform: translateY(30px);
+	transform: translateY(30px);
+	-webkit-transition: transform 700ms cubic-bezier(0.77, 0, 0.175, 1) 0;
+	-moz-transition: transform 700ms cubic-bezier(0.77, 0, 0.175, 1) 0;
+	transition: transform 700ms cubic-bezier(0.77, 0, 0.175, 1) 0; 
+	}
+.hide_ind{ 
+	opacity: 0;
+	-webkit-transform: translateY(25px);
+	-ms-transform: translateY(25px);
+	transform: translateY(25px);
+	-webkit-transition: all 700ms cubic-bezier(0.19, 1, 0.22, 1) 0ms;
+	-moz-transition: all 700ms cubic-bezier(0.19, 1, 0.22, 1) 0ms;
+	transition: all 700ms cubic-bezier(0.19, 1, 0.22, 1) 0ms; }
+}
+.enterthe1_ind{}
+.jobs a:hover .title_ind{
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1) 0;
+    -moz-transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1) 0;
+    transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1) 0; }
+.jobs a:hover .gradient_ind {opacity: 1; }
+.jobs a:hover .hide_ind {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition: all 600ms cubic-bezier(0.19, 1, 0.22, 1) 100ms;
+    -moz-transition: all 600ms cubic-bezier(0.19, 1, 0.22, 1) 100ms;
+    transition: all 600ms cubic-bezier(0.19, 1, 0.22, 1) 100ms; }
+.jobs a:hover b, .jobs a:hover .enterthe_ind {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0); }
+    
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.animated.hinge {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+}
+
+.animated.flipOutX,
+.animated.flipOutY,
+.animated.bounceIn,
+.animated.bounceOut {
+  -webkit-animation-duration: .75s;
+  animation-duration: .75s;
+}
+
+
+@-webkit-keyframes flash {
+  from, 50%, to {
+    opacity: 1;
+  }
+
+  25%, 75% {
+    opacity: 0;
+  }
+}
+
+@keyframes flash {
+  from, 50%, to {
+    opacity: 1;
+  }
+
+  25%, 75% {
+    opacity: 0;
+  }
+}
+
+.flash {
+  -webkit-animation-name: flash;
+  animation-name: flash;
+}
+

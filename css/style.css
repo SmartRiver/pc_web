@@ -1,0 +1,143 @@
+html, body {
+    position: relative;
+    height: 100%;
+}
+body {background: #eee;font-family: Helvetica Neue, Helvetica, Arial, sans-serif;font-size: 14px;color:#000;margin: 0;padding: 0;}
+.swiper-container {width: 100%;height: 100%;margin-left: auto;margin-right: auto;}
+.swiper-slide {text-align: center;font-size: 18px;background: #fff;min-width: 1024px;/* Center slide text vertically */display: -webkit-box;display: -ms-flexbox;display: -webkit-flex;display: flex;-webkit-box-pack: center;-ms-flex-pack: center;-webkit-justify-content: center;justify-content: center;-webkit-box-align: center;-ms-flex-align: center;-webkit-align-items: center;align-items: center;}
+
+
+
+/*－－－－－－－－－－通用样式－－－－－－－－－－*/
+	.wrap{position: relative;width: 100%; height: 100%; background-size:cover ; min-width: 1024px;}
+/*----------header头部样式----------*/
+header{min-width: 1024px; position: fixed; top: 0; left: 0; z-index: 100; width: 100%; height: 65px; background: rgba(255,255,255,0.6);}
+header>div{ float: left; height: 65px;}
+.logo{ width: 25%;}
+	.logo>img{ width: 161px; height: 51px; margin: 7px 0 7px 20px;}
+.nav{ width: 50%;}
+	.nav>ul{ width: 100%; height: 65px;}
+	.nav>ul>li{ box-sizing: border-box; float: left; width: 20%; height: 65px; padding-left: 10px; color: #757575; line-height: 65px; font-size: 17px;}
+	.nav>ul .on{ color: #73151a;}
+.contactus{ font-size: 17px; width: 25%; text-align: right; box-sizing: border-box; padding-right: 50px; line-height: 65px; color: #a1a1a1;}
+
+/*首页 index：后缀_ind*/
+.centent_ind{ width: 100%; height: 100%;}
+.centent_ind>img{ width: 100%; height: 100%; display: block;}
+.pulse_ind{height: 30px;width: 30px;position: absolute;bottom: 30px;left: 50%;margin-left: -15px;}
+.project_ind{ width: 100%; height: 100%;}
+	.project_ind>li{ width: 25%; float: left; height: 100%; position: relative; overflow: hidden;}
+		.project_ind>li .tupian_ind{ z-index: 1; width: 100%; height: 100%; position: absolute;}
+			.project_ind>li .tupian_ind>img{ width: 100%;}
+			.gradient_ind{background-image: -webkit-linear-gradient(top, rgba(50, 63, 47, 0.2) 0%, #000 100%); background-image: linear-gradient(to bottom, rgba(50, 63, 47, 0.2) 0%, #000 100%); position: absolute;left: 0;top: 0;  width: 100%; height: 100%; opacity: 0; z-index: 10;}
+			.project_ind>a{ display: block;}
+		.project_ind>li .front_ind{ z-index: 2; top: 0; left: 0; width: 100%; height: 100%; position: absolute;}
+			.project_ind>li .inner_ind{ -webkit-transform: translate(-50%, -50%);-ms-transform: translate(-50%, -50%);transform: translate(-50%, -50%); position: absolute;top: 50%; left: 50%; height: 250px; box-sizing: border-box ;width: 100%; padding: 0 10px;}
+			.p1_ind{color: #FFFFFF; margin-bottom: 10px; font-size: 14px;}
+			.project_ind>li .inner_ind>p{ font-size: 47px; color: #FFFFFF;}
+			.enterthe_ind{ width: 80px; height: 40px; border-radius: 5px; font-size: 16px; color: #f2eee2; margin: 0 auto; text-align: center; line-height: 40px; border: 1px solid #f2eee2; margin-top: 20px; -webkit-transform: translateY(60px);-ms-transform: translateY(60px);transform: translateY(60px);-webkit-transition: transform 700ms cubic-bezier(0.165, 0.84, 0.44, 1) 150ms;-moz-transition: transform 700ms cubic-bezier(0.165, 0.84, 0.44, 1) 150ms; transition: transform 700ms cubic-bezier(0.165, 0.84, 0.44, 1) 150ms;}
+
+
+/*首页 列表页productList.html：后缀_pli*/
+.pliimg_pli{ width: 100%; position: absolute; top: 0; left: 0;}
+.plibg_pli{background: url(../img/bg.png) no-repeat;}
+.content3_pli{ width: 100%; height: auto;}
+.content1_pli{ width: 70%; margin: 0 auto; height: auto;background: url(../img/bg.png) no-repeat; margin-bottom: 20px;}
+	.details_pli{ width: 100%; height: 254px; background: #FFFFFF; position: relative;}
+		.details_pli>div{ height: 254px; float: left; position: absolute;}
+		.details_pli>div:nth-child(1){width: 35%; top: 0; left: 0; z-index: 2; background: #FFFFFF;}
+		.details_pli>div:nth-child(2){width: 65%; overflow: hidden; top: 0; right: 0;transition:width .5s;-moz-transition:opacity .5s; /* Firefox 4 */-webkit-transition:opacity .5s; /* Safari and Chrome */-o-transition:opacity .5s; /* Opera */}
+			.details_pli>div:nth-child(2)>img{height: 100%; width: 100%;}
+			.details_pli section{ width: 100%; height: 254px; position: relative;}
+			.bg1_pli{ width: 100%; height: 254px; background: #FFFFFF; position: absolute; top: 0; left: 0;transition:width .5s;-moz-transition:width .5s; /* Firefox 4 */-webkit-transition:width .5s; /* Safari and Chrome */-o-transition:width .5s; /* Opera */} 
+			.title_pli{ display: block; text-align: center;}
+				.title_pli>h2{ font-size: 18px; line-height: 254px;}
+			.text_pli{ display: none; padding: 28px 10px 0 15px; box-sizing: border-box;}
+				.text_pli>h2{ font-size: 18px;}
+				.text_pli>p{ font-size: 14px; word-wrap: break-word;}
+					.text_pli>p>span{ font-size: 14px;}
+				.content1_pli a:hover .bg1_pli{ width: 130%;}
+				.content1_pli a:hover .tupian_pli{ opacity: 0.5;}
+.paging_pli{ width: 100%; height: auto; margin-bottom: 20px; text-align: center;}
+	.paging_pli>div{ width: 167px; height: 21px; margin: 0 auto;}
+	.paging_pli>div{ display: -webkit-box; display: -moz-box;}
+	.paging_pli>div span{ display: block; height: 21px; cursor:pointer;}
+	.paging_pli>div span:nth-child(1){ margin-right: 25px;}
+	.paging_pli>div span:last-child{ margin-left: 25px;}
+	.paging_pli>div .list1_Pli{cursor:pointer; margin-right: 5px; float: left; color: #9e9e9f; width: 21px; height: 21px; text-align: center; line-height: 21px;}
+	.paging_pli>div .list1_Pli:last-child{ margin-right: 0;}
+	.paging_pli>div .off{ background: #dbdcdc; color: #FFFFFF;}
+
+
+
+
+/*---zy*/
+
+/*----------productDetail  后缀 _pde----------*/
+.main_pde{ width: 79.43%; padding: 65px 10.285% 50px 10.285%; font-family: "黑体";}
+.banner_pde{ width: 100%; height: auto;}
+	.banner_pde img{ display: block; width: 100%; height: auto;}
+.content_pde{ position: relative; width: 100%; display: -webkit-box;}
+.left_pde{ width: 70.51%; margin-right: 0.92%;}
+.right_pde{ width: 28.57%;}
+.card-1_pde, .card-2_pde, .card-3_pde, .card-4_pde{ width: 100%; background-color: #FFFFFF; margin-bottom: 10px; padding-left: 10px; padding-right: 10px; box-sizing: border-box;}
+.card-1_pde{ padding-top: 48px; padding-bottom: 40px;}
+.card-2_pde{ padding-top: 40px; padding-bottom: 40px;}
+.card-3_pde{ padding-top: 48px;}
+.card-4_pde{ padding-top: 36px; padding-left: 0; padding-right: 0;}
+	.card-1_pde h4, .card-2_pde h4, .card-3_pde h4, .card-4_pde h4{ width: 100%; height: 20px; line-height: 20px; font-size: 20px; text-align: center; color: #515152;}
+	.card-4_pde h4{ margin-bottom: 35px;}
+.text-1_pde, .text-2_pde, .text-3_pde{ height: auto; line-height: 22px; padding-top: 14px; color: #898a89; margin: 0;}
+.text-1_pde{ font-size: 18px;}
+.text-2_pde{ font-size: 16px; padding-bottom: 10px;}
+.text-3_pde{ font-size: 16px;}
+.center_pde{ text-align: center;}
+.buttonBox_pde{ width: 100%; height: 36px; padding: 21px 0 15px 0; text-align: center;}
+.button_pde{ width: 110px; padding-left: 10px; padding-right: 10px; height: 36px; border-radius: 36px; background-color: #ec1943; color: #FFFFFF; font-size: 22px; text-align: center;}
+.otherProBox_pde{ position: relative; width: 100%; height: auto; margin-bottom: 8px;}
+.otherProImg_pde{ display: block; width: 100%; height: auto;}
+.otherProBg_pde{ display: none; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.5);}
+.otherProBg_pde p{ color: #fff; text-align: center; font-size: 16px; padding-top: 20%;}
+.otherProBox_pde:hover .otherProBg_pde{ display: block;}
+/*popup*_pde 弹出框部分*/
+.popupBox_pde{ display: block; width: 800px; height: 630px; background-color: #ffffff; position: relative; margin: 6% auto 0 auto;}
+.popupHead_pde{ position: relative;}
+	.popupHead_pde p{ font-size: 18px; width: 36%; margin: 0 32% 0 32%; text-align: center; color: #515152; height: 28px; line-height: 28px;}
+.popupP-1_pde{ padding-top: 28px; border-bottom: 1px solid #515152;}
+.popupP-1_pde{}
+.popupCont_pde{ width: 90%; padding: 20px 5% 0 5%;}
+.popupClose_pde{ position: absolute; top: 0; right: 0; height: 30px; width: auto; padding: 10px;}
+.popupBlock_pde{ float: left; width: 50%; box-sizing: border-box; padding: 3px 40px 5px 40px; color: #898a89;}
+	.popupBlock_pde input{ width: 100%; margin: 0; height: 30px; color: #898a89; box-sizing: border-box; border-radius: 3px; border: 1px solid #cccccc; box-shadow: 0px 1px 1px #CCCCCC;}
+	.popupBlock_pde input{
+		background: -webkit-linear-gradient(#f6f6f6, #ffffff); /* Safari 5.1 - 6.0 */
+		background: -o-linear-gradient(#f6f6f6, #ffffff); /* Opera 11.1 - 12.0 */
+		background: -moz-linear-gradient(#f6f6f6, #ffffff); /* Firefox 3.6 - 15 */
+		background: linear-gradient(#f6f6f6, #ffffff); /* 标准的语法 */
+	}
+	.popupBlock_pde p{float: left; font-size: 14px; height: 30px; line-height: 30px; color: #898a89;}
+	.popupBlock_pde input[type=radio]{ float: left; background: none; display: none;}
+	.popupBlock_pde .popupTip{ font-size: 12px; color: #ec1943;}
+.popupButton_pde{ width: 100%; color: #ffffff; font-size: 14px; border: 1px solid #231815; height: 36px; border-radius: 2px;}
+.popupButton_pde{
+	background: -webkit-linear-gradient(#246e9f, #124f7a); /* Safari 5.1 - 6.0 */
+	background: -o-linear-gradient(#246e9f, #124f7a); /* Opera 11.1 - 12.0 */
+	background: -moz-linear-gradient(#246e9f, #124f7a); /* Firefox 3.6 - 15 */
+	background: linear-gradient(#246e9f, #124f7a); /* 标准的语法 */
+}
+.popupPoint_pde{ float: left; display: block; width: 6px; height: 6px; background-color: #2e9dd1; border-radius: 6px; margin: 8px 6px;}
+.popupRadioBox_pde{ float: left; padding-top: 7px;}
+	.popupRadioBox_pde img{ width: 22px; float: left;}
+	.popupRadioBox_pde span{ float: left; display: block; font-size: 16px; height: 22px; padding-right: 90px; padding-left: 10px;}
+.popupRadioP_pde{ width: 100%;}
+.tip-2_pde{ display: none;}
+
+.popupBox-2_pde{ display: none; position: relative; width: 822px; height: 448px; background-color: #FFFFFF; margin: 12% auto 0 auto; text-align: center;}
+.popupSucIcon_pde{ width: 84px; padding: 36px 20px 18px 20px;}
+.popupSucP_pde{ height: 38px; line-height: 38px; font-size: 22px; color: #515152;}
+.popup2Dbarcode_pde{ width: 139px; padding-top: 41px;}
+
+/*----------popup弹出层----------*/
+.popupPage{position: fixed; z-index: 200; display: none; top: 0; bottom: 0; width: 100%; background: rgba(0,0,0,0.15);}
+
+/*zy---*/
