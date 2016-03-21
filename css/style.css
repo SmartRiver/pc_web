@@ -78,8 +78,8 @@ header>div{ float: left; height: 65px;}
 	.txt1_cus>p:first-child{ border-bottom:1px solid #A4A4A5; margin-top: 28px;}
 	.contact_cus{ display: -webkit-box; display: -moz-box; display: -ms-flexbox; width: 100%; height: 187px; margin-top: 72px;}
 	.contact_cus>div{ -webkit-box-flex: 1; -moz-box-flex: 1; -ms-flex: 1;}
-	.contact_cus>div:nth-child(2) dl{ text-align: -webkit-center; text-align: -moz-center; text-align: center;}
-	.contact_cus>div:nth-child(3) dl{ text-align: -webkit-right;	text-align: -moz-right; text-align: right;}
+	.contact_cus>div:nth-child(2) dl{ text-align: -webkit-center; text-align: -moz-center;}
+	.contact_cus>div:nth-child(3) dl{ text-align: -webkit-right;	text-align: -moz-right;}
 	.contact_cus>div>dl{ width: 100%;}
 	/*.contact_cus>dl:nth-child(2)>dt{text-align: center;}
 	.contact_cus>dl:nth-child(3)>dt{ text-align: right;}*/
