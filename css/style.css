@@ -3,7 +3,7 @@ html, body {
     height: 100%;
 }
 body {background: #eee;font-family: Helvetica Neue, Helvetica, Arial, sans-serif;font-size: 14px;color:#000;margin: 0;padding: 0;}
-.swiper-container {width: 100%;height: 100%;margin-left: auto;margin-right: auto;}
+.swiper-container{width: 100%;height: 100%;margin-left: auto;margin-right: auto;}
 .swiper-slide {text-align: center;font-size: 18px;background: #fff;min-width: 1024px;/* Center slide text vertically */display: -webkit-box;display: -ms-flexbox;display: -webkit-flex;display: flex;-webkit-box-pack: center;-ms-flex-pack: center;-webkit-justify-content: center;justify-content: center;-webkit-box-align: center;-ms-flex-align: center;-webkit-align-items: center;align-items: center;}
 
 
@@ -69,17 +69,31 @@ header>div{ float: left; height: 65px;}
 	.paging_pli>div .off{ background: #dbdcdc; color: #FFFFFF;}
 
 
-
-
+/*联系我们customerservice.html：后缀_cus*/
+.content_cus{ width: 100%; height: 100%; background: url(../img/bg.jpg) no-repeat; padding-top: 125px; box-sizing: border-box;}
+.information_cus{ width: 765px; height: 420px; margin: 0 auto;}
+	.txt_cus{ width: 100%; height: 37px; font-size: 37px; line-height: 37px; text-align: center; color: #595757;}
+	.txt1_cus{ width: 100%; height: auto;}
+	.txt1_cus>p{ width: 516px; height: 47px; margin: 0 auto; color: #a4a4a5; font-size: 20px; line-height: 47px; text-align: center;}
+	.txt1_cus>p:first-child{ border-bottom:1px solid #A4A4A5; margin-top: 28px;}
+	.contact_cus{ display: -webkit-box; display: -moz-box; width: 100%; height: 187px; margin-top: 72px;}
+	.contact_cus>div{ -webkit-box-flex: 1; -moz-box-flex: 1;}
+	.contact_cus>div:nth-child(2) dl{ text-align: -webkit-center; text-align: -moz-center;}
+	.contact_cus>div:nth-child(3) dl{ text-align: -webkit-right; text-align: -moz-right;}
+	.contact_cus>div>dl{ width: 100%;}
+	/*.contact_cus>dl:nth-child(2)>dt{text-align: center;}
+	.contact_cus>dl:nth-child(3)>dt{ text-align: right;}*/
+	.contact_cus>div>dl>dt{ width: 100%; height: 148px;}
+	.contact_cus>div>dl>dd{ width: 148px; text-align: center; color: #595757; height: 13px; line-height: 13px; font-size: 13px; margin-top: 20px;}
 /*---zy*/
 
 /*----------productDetail  后缀 _pde----------*/
 .main_pde{ width: 79.43%; padding: 65px 10.285% 50px 10.285%; font-family: "黑体";}
 .banner_pde{ width: 100%; height: auto;}
 	.banner_pde img{ display: block; width: 100%; height: auto;}
-.content_pde{ position: relative; width: 100%; display: -webkit-box;}
-.left_pde{ width: 70.51%; margin-right: 0.92%;}
-.right_pde{ width: 28.57%;}
+.content_pde{ position: relative; width: 100%;} 
+.left_pde{ width: 70.51%; margin-right: 0.92%; float: left;}
+.right_pde{ width: 28.57%; float: left;}
 .card-1_pde, .card-2_pde, .card-3_pde, .card-4_pde{ width: 100%; background-color: #FFFFFF; margin-bottom: 10px; padding-left: 10px; padding-right: 10px; box-sizing: border-box;}
 .card-1_pde{ padding-top: 48px; padding-bottom: 40px;}
 .card-2_pde{ padding-top: 40px; padding-bottom: 40px;}
@@ -134,7 +148,9 @@ header>div{ float: left; height: 65px;}
 
 .popupBox-2_pde{ display: none; position: relative; width: 822px; height: 448px; background-color: #FFFFFF; margin: 12% auto 0 auto; text-align: center;}
 .popupSucIcon_pde{ width: 84px; padding: 36px 20px 18px 20px;}
-.popupSucP_pde{ height: 38px; line-height: 38px; font-size: 22px; color: #515152;}
+.popupSucP_pde{ height: 30px; line-height: 30px; font-size: 22px; color: #515152;}
+.popupSucP1_pde{ height: 30px; line-height: 30px; font-size: 17px; color: #515152;}
+.popupSucP1_pde>span{font-size: 17px; color: #1c93f8;}
 .popup2Dbarcode_pde{ width: 139px; padding-top: 41px;}
 
 /*----------popup弹出层----------*/
